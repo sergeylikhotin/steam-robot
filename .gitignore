@@ -12,6 +12,8 @@
 /build
 /docs
 
+.idea
+
 # misc
 .DS_Store
 .env.local
