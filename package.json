@@ -1,6 +1,6 @@
 {
-  "name": "steam-robot",
-  "version": "3.0.0",
+  "name": "node-steam-robot",
+  "version": "3.1.0",
   "description": "Steam bots creating based on middlewares",
   "keywords": [
     "steam",
