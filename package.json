@@ -13,7 +13,6 @@
   },
   "license": "MIT",
   "author": "Vladislav Puzyrev",
-  "type": "module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
