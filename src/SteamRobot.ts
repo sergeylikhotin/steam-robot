@@ -47,11 +47,15 @@ export class SteamRobot {
     })
 
     await Promise.all([
-      new Promise<void>((resolve) => {
+      new Promise<void>((resolve, reject) => {
         client.on('webSession', (sessionId, cookies) => {
           community.setCookies(cookies)
-          manager.setCookies(cookies)
-          resolve()
+          manager.setCookies(cookies, err => {
+            if (err) {
+              return reject(err);
+            }
+            resolve();
+          })
         })
       }),
     ])
